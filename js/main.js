@@ -1,144 +1,134 @@
-console.log('Sample JavaScript HW#1');
+  console.log('Sample JavaScript #2 HW #16');
 
-/*
- * #1
- *
- * Создайте переменные со значениями
- */
-
- var myNum = 10,
-     myStr = 'строка',
-     myBool = true,
-     myArr = [1, 2, 3, 4, 5],
-     myObj = {first: 'First Name', last: 'Last Name'};
-
- console.log(myNum);
- console.log(myStr);
- console.log(myBool);
- console.log(myArr);
- console.log(myObj);
-
-
-
-/*
- * #2
- *
- * Отформатируйте целое число, которое хранится в переменной myNum,
- * чтобы получить результат с 2 знаками после запятой.
- * Результат сохраните в переменную decimal2.
- */
-
-decimal2 = myNum.toFixed(2);
-// console.log(decimal2);
-
-
-/*
- * #3
- *
- * Создайте переменную i для которой выполните префиксный
- * и постфиксный инкремент и декремент.
- * Поэкспериментируйте с результатами, выводя их в консоль.
- */
-
-var i = 7;
-console.log(++i); //8
-console.log(i++); //8
-console.log(--i); //8
-console.log(i--); //8
-console.log(i); //7
-
-
-
-/*
- * #4
- *
- * Создайте новую переменную myTest и присвойте ей значение 20.
- * Выполните присваивание с операцией, используя операторы: +=, –=, *=, /=, %=.
- * Результаты присваиваются в myTest, затем выводятся в консоль.
- * В вычислениях можно использовать объявленную ранее переменную myNum и/или числа.
- */
-
-
-var myTest = 20; console.log(myTest);
-
-myTest += 2; console.log(myTest);
-
-myTest -= 1; console.log(myTest);
-
-myTest *= 1; console.log(myTest);
-
-myTest /= 1; console.log(myTest);
-
-myTest %= 3; console.log(myTest);
-
-
-/*
- * #5
- *
- * Используя свойства и методы объекта Math, присвойте переменным и отобразите в консоли
- */
-
- var myPi = Math.PI;
- console.log(myPi);
-
- var myRound = Math.round(89.279);
- console.log(myRound);
-
- var myRandom = Math.random()*10;
- console.log(myRandom);
-
- var myPow = Math.pow(3,5);
- console.log(myPow);
+// // * #1
+var userObj = {
+    firstName: 'Энтони',
+    lastName: 'Хопкинс',
+    age: 60,
+    fullName () {
+        return `${userObj.firstName} ${userObj.lastName}`;
+    }
+ }
+ console.log(userObj);
  
 
-/*
- * #6
- *
- * Создайте объект с именем strObj.
- * Присвойте ключу str строку текста "Мама мыла раму, рама мыла маму", ключу length установите длину этой строки.
- */
+// // //  * #2
 
-var strObj = {str: 'Мама мыла раму, рама мыла маму'}; 
-strObj.length = strObj.str.length;
-console.log(strObj);
+ console.log(userObj.fullName());
+ 
 
+// // //  * #3
+ function defUpperStr(f1) {
+     return `${f1 || 'DEFAULT TEXT'}`.toUpperCase();
+ }
 
-
-
-/*
- * #7
- *
- * Проверьте наличие текста 'рама' в поле str объекта strObj (см.п.6),
- * результат сохраните в переменную isRamaPos и выведите ее в консоль.
- */
-
-var isRamaPos = strObj.str.indexOf('рама');
-console.log(isRamaPos);
+defUpperStr('My text');
+console.log(defUpperStr('My text'))
+console.log(defUpperStr());
 
 
+// //  * #4
 
 
-/*
- * #8
- *
- * Выполните переименование подстроки в строке.
- * В качестве исходной строки используйте значение поля str объекта strObj (см.п.6), результат сохраните в переменную strReplace и отобразите в консоли.
- * Исходная строка: 'Мама мыла раму, рама мыла маму'
- *       Результат: 'Мама моет раму, Рама держит маму'
- */
+function evenFn(n) {
+    var mas = [];
+    for (var i = 1; i <= n ; i++) 
+        if (i % 2 === 0) 
+        mas.push(i);
+        return mas;
+    
+}
+     evenFn(20)
+    
 
-var strReplace = strObj.str.replace('Мама мыла раму, рама мыла маму', 'Мама моет раму, Рама держит маму')
-console.log(strReplace);
 
 
-/*
- * #9
- *
- * Преобразуйте любую строку в верхний, затем в нижний регистры, результат отобразите в консоли.
- */
+// //  * #5
 
- var string = 'What is difficult in training will become easy in a battle';
- console.log(string.toUpperCase());
- console.log(string.toLowerCase());
+function weekFn(n) {
+    var day;
+
+    switch (n) {
+        case 1: day = 'Понедельник'; break;
+        case 2: day = 'Вторник'; break;
+        case 3: day = 'Среда'; break;
+        case 4: day = 'Четверг'; break;
+        case 5: day = 'Пятница'; break;
+        case 6: day = 'Суббота'; break;
+        case 7: day = 'Воскресенье'; break;
+
+        default: day = null;  
+    }  
+    return day;
+}
+
+console.log(weekFn(2));
+
+
+
+
+// // * #6
+
+function ageClassification(n) {
+    var x = n < 0 ? null : n >= 0 && n <= 24 ? 'детский возраст' : n > 24 && n <= 44 ? 'молодой возраст' : n > 44 && n <= 65 ? 'средний возраст' :
+ n > 65 && n <= 75 ? 'пожилой возраст': n > 75 && n <= 90 ? 'старческий возраст' : n > 90 && n <= 122 ? 'долгожители' : null;
+ 
+    
+    return x;
+ }
+ 
+//  console.log('-1 :', ageClassification(-1)); // -1 : null
+// console.log('5 :', ageClassification(5)); // 5 : детский возраст
+// console.log('34 :', ageClassification(34)); // 34 : молодой возраст
+// console.log('50 :', ageClassification(50)); // 50 : средний возраст
+// console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
+// console.log('80 :', ageClassification(80)); // 80 : старческий возраст
+// console.log('110 :', ageClassification(110)); // 110 : долгожители
+// console.log('130 :', ageClassification(130)); // 130 : null
+
+
+
+
+// // // * #7
+function oddFn(n) {
+
+var mas2 = [];
+var i = 0; 
+    while (i++ < n)  if (i % 2 !== 0)
+        mas2.push(i);
+        return mas2;
+}
+
+ console.log(oddFn(20));
+   
+
+
+
+// // *8
+
+function mainFunc(a, b, func) {
+if (typeof func != 'function')
+return false;
+return func (a,b);
+}
+
+
+function cbPow (a, b){
+    return Math.pow(a,b);
+}
+
+
+function cbAdd (a, b){
+    return a+b;
+}
+
+function cbRandom (a,b){
+    return Math.ceil(Math.random() * (a - b) + b );
+}
+
+console.log(mainFunc(2, 5,cbAdd));
+console.log(mainFunc(2, 5,cbPow));
+console.log(mainFunc(2, 5,cbRandom));
  
  
+
