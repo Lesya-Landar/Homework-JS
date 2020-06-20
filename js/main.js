@@ -1,256 +1,146 @@
-console.log('Sample JavaScript #4 HW #18');
-/* eslint-disable multiline-comment-style */
+// /* eslint-disable multiline-comment-style */
+// /* eslint-disable no-param-reassign */
+// /* eslint-disable no-useless-escape */
+// /* eslint-disable require-unicode-regexp */
+// /* eslint-disable func-style */
+// /* eslint-disable require-jsdoc */
+// console.log('Sample JavaScript #7 HW #21');
 
-/*
- * #1
- *
- * Создайте функцию wordsList(str, subStr), принимающую два параметра:
- * строку текста произвольной длины и подстроку для поиска.
- * Функция должна вернуть коллекцию уникальных слов в нижнем регистре, без символов-разделителей, т.е.:
- * из строки str необходимо удалить все следующие символы: . , ! ? ; : "
- * привести строку к нижнему регистру
- * получить коллекцию уникальных, неповторяющихся слов, в которых содержится подстрока,
- * переданная в параметре subStr.
- */
-
-let myLongStr = 'Lorem". ipsum, dolor! sit? amet: consectetur; adipisicing elit. Dolores quas alias animi inventore delectus quo non, fugit officiis a repellendus facere quae perferendis quos doloremque in, accusantium eum sint corrupti similique voluptatibus omnis mollitia id ex. Adipisci temporibus laborum fugit aperiam, minima recusandae nemo! Voluptas, fugiat sunt saepe dignissimos quam possimus vero voluptatibus quas commodi ipsa vitae, est error voluptate ex cum? Ab, numquam doloremque sunt id molestias explicabo tenetur? Corporis, quisquam voluptatem doloremque itaque est quod impedit, commodi illo eius dicta, enim reiciendis quidem minus tempora sapiente ratione. Repudiandae tempora officia voluptate nam cum dolore corrupti dolorem asperiores quisquam dicta, officiis distinctio ad possimus earum rerum ipsam veritatis enim voluptatum ea numquam doloremque deleniti sapiente velit maxime. Temporibus nostrum perspiciatis molestiae tempora, quo molestias numquam atque obcaecati unde quos itaque modi fugiat dolorem non rerum harum, esse, impedit voluptas minus? Deleniti atque reiciendis voluptate aut consequuntur blanditiis dolores dolorem magni adipisci eius unde, rerum explicabo labore molestias non et exercitationem mollitia iure. Est libero recusandae et, animi sunt a blanditiis consequuntur nemo iste laudantium quos sint ipsa ad possimus sequi dolor ipsum mollitia facilis? Officia quasi rerum atque esse voluptatum quae eos! Sequi eum repellat, molestiae enim soluta quos, tempora recusandae nulla facere quae assumenda harum modi laboriosam. Earum error aspernatur explicabo? Earum non, nesciunt distinctio quod dolores facere, placeat consectetur illum omnis eligendi ullam! Totam laudantium voluptates esse inventore molestias sapiente corrupti temporibus iure! Explicabo laudantium repellendus ullam laboriosam. Odit nostrum sit autem at laboriosam? Autem cupiditate facilis dolore nemo perferendis facere! Maiores iure voluptas obcaecati nihil. Rerum dignissimos fugit a dolorem earum soluta, ut at ullam repudiandae sunt, voluptatum fugiat reiciendis distinctio ipsum, neque magni mollitia laborum perferendis nihil voluptatem adipisci assumenda aperiam! Libero natus fuga fugiat corrupti recusandae vel asperiores earum qui explicabo doloremque, magni error expedita dolor quia eos omnis nostrum facilis fugit molestiae culpa placeat eius! Fuga cum obcaecati esse, inventore cumque quibusdam fugiat beatae? Delectus rerum vel repellat fugiat eius id doloribus. Suscipit hic, vel nobis optio obcaecati cupiditate ullam? Facere, vitae natus, reprehenderit debitis, ea reiciendis doloribus possimus repudiandae nihil accusamus iusto neque ex voluptate nam fugiat voluptates atque facilis sed. Vitae non iure placeat, nam doloribus temporibus consectetur esse distinctio sit tempore, corrupti vero amet odit vel nostrum voluptatum! Ipsum nihil omnis tenetur debitis, sit eligendi! Suscipit vitae quae nemo eveniet veritatis. Perspiciatis modi expedita placeat aut voluptate officiis atque quasi tenetur nulla animi! Minus omnis nesciunt beatae ullam itaque facilis a consequatur, at fugiat natus placeat inventore vitae, cumque quo ipsum? Deserunt suscipit velit dolor nemo quasi deleniti nisi, temporibus explicabo laboriosam, corrupti, ad quibusdam ratione praesentium. Quo totam, qui libero, id iusto, asperiores vitae dolorem perferendis minus distinctio animi repudiandae. Reprehenderit maxime eum asperiores velit praesentium nulla soluta minus at ad consequuntur, error deleniti non corrupti voluptatibus ullam repellat quod ipsa tempora ut! Nemo corrupti aut quia corporis odit maxime laudantium nam unde perspiciatis est, dicta perferendis debitis et quod deleniti! Distinctio, sapiente ducimus ipsam id cumque eveniet totam veritatis nisi ex quis amet quod, quisquam fugit est perferendis quia culpa consequatur eaque incidunt. Rem repudiandae voluptatibus adipisci ad soluta deserunt sapiente culpa saepe veritatis similique illo veniam ipsum ducimus nisi, iste est accusantium unde nesciunt laboriosam itaque beatae eius exercitationem neque quam. In aspernatur totam doloribus quisquam voluptatem commodi, nostrum reiciendis, esse maxime ipsa laudantium ut sed quos. Repudiandae odio sunt minus reprehenderit, laudantium aliquam ea aperiam, voluptas placeat nemo harum excepturi commodi nostrum perspiciatis aut iusto. Accusamus ad voluptatem eaque, distinctio accusantium unde voluptatum esse autem molestiae obcaecati numquam. Cumque sint, est temporibus, quia animi iste quo repudiandae, laudantium voluptatibus ducimus architecto. Vel doloribus obcaecati perspiciatis voluptatum voluptatibus molestias sit, sed reiciendis esse ea exercitationem delectus quos officiis aliquid porro architecto magni sint temporibus illo aspernatur reprehenderit deserunt deleniti doloremque? Aliquam, ut minima. Architecto et, magnam dignissimos nam animi facilis? Recusandae quis ex repellat, voluptatibus veritatis modi beatae ea provident? Excepturi eligendi laudantium beatae dolores eum, accusantium eveniet ipsa quidem voluptas repellendus illo veniam magnam saepe asperiores quos modi in necessitatibus officiis tenetur dolorem, minima voluptate similique praesentium! Necessitatibus sint, itaque impedit, laboriosam, ratione blanditiis at dolor quos aliquam nobis nemo amet quia. Nostrum sit nesciunt, illum deleniti, aliquid, aut ipsa sapiente officia molestias ipsam modi. Quod cupiditate vel quidem iure nemo? Quisquam beatae natus est non amet nostrum dicta reiciendis expedita. Consequatur quo pariatur voluptatem voluptatum sed velit molestiae nemo odio sequi in? Soluta laboriosam ipsam incidunt architecto pariatur, harum molestiae dignissimos quaerat ducimus, dolorem autem qui aliquam doloremque tenetur itaque optio fuga, iusto officia at? Esse blanditiis veritatis voluptas, similique, ipsum, voluptate illum beatae ducimus magni perferendis fuga ea? Est voluptatum culpa delectus voluptatibus doloribus recusandae porro veritatis, molestiae magni soluta, possimus quidem voluptas suscipit obcaecati dolores voluptatem neque, asperiores labore corrupti dicta. Consequatur eius, inventore autem doloremque recusandae quae! Neque facere laudantium blanditiis inventore temporibus nostrum praesentium aperiam perspiciatis dicta perferendis ullam ab impedit adipisci dolorem exercitationem dignissimos ipsum minus incidunt tempore in, illo placeat odio dolorum. Maiores sed est id officiis praesentium ratione cumque ut iste alias laboriosam. Repellendus deserunt ut optio exercitationem ab repudiandae ex doloremque nisi magni numquam accusantium recusandae nesciunt sint quisquam odio, eum aliquam et excepturi culpa praesentium nam laudantium soluta dolorem saepe? Dicta hic sint totam temporibus expedita iste velit, minus blanditiis similique! Nemo quam natus explicabo voluptas perspiciatis ex molestias blanditiis magnam quibusdam, consequatur culpa ducimus facere soluta accusamus porro ratione velit fuga eaque. Natus consequuntur odit dolore illo totam minima, cum explicabo expedita debitis aperiam, tempore ducimus eum inventore odio assumenda atque, recusandae error. Doloribus omnis voluptate fugit ad quam a, mollitia culpa commodi libero vero delectus corporis fuga blanditiis nesciunt aut porro incidunt, iure dolore placeat necessitatibus odio quaerat iste. Necessitatibus enim earum praesentium tenetur, temporibus pariatur recusandae perferendis reiciendis numquam consequuntur alias non. Debitis commodi quia, magni minus quaerat aliquam assumenda repudiandae doloribus consectetur ipsam sapiente animi! Dolorem commodi tempore, quos reprehenderit ducimus adipisci cum quia maiores tenetur ex modi quibusdam incidunt. Minima, amet?';
-
-function wordsList (str, subStr) {
-  let re = /\.|!|;|:|"|,|\?/gi;
-  let arr = str.
-    replace(re, '').
-    toLowerCase().
-    split(' ').
-    filter(function (arrItem) { 
-      return arrItem.indexOf(subStr) > -1});
-  let res = new Set();
-
-  arr.forEach (function(arrItem) {
-    res.add(arrItem);
-  });
-
-  return res;
-};
-
-
-console.log(wordsList(myLongStr, 'lore')); // {"lorem", "dolores", "doloremque", "dolore", "dolorem
-console.log(wordsList(myLongStr, 'no')); // {"non", "nostrum", "nobis"}
-console.log(wordsList(myLongStr, 'rep')); // {"repellendus", "repudiandae", "repellat", "reprehenderit"}
-
-/*
- * #2
- *
- * Создайте функцию getLocalDate(date, isSeconds, isISO), которая будет принимать любую
- * дату от конструктора new Date и преобразовывать ее в следующие форматы в зависимости от параметров:
- * getLocalDate(date)              → dd.mm.yyyy, hh:mm,    например: 16.07.2019, 00:15
- * getLocalDate(date, true)        → dd.mm.yyyy, hh:mm:ss, например: 16.07.2019, 00:15:32
- * getLocalDate(date, false, true) → yyyy-mm-dd, hh:mm,    например: 2019-06-02, 00:15
- * getLocalDate(date, true, true)  → yyyy-mm-dd, hh:mm:ss, например: 2019-06-02, 00:15:32
- * date – любая дата из конструктора new Date().
- * isSeconds – опциональный параметр для отображения секунд в дате.
- * isISO – опциональный параметр переключения формата даты.
- */
-
- 
-let myDate = new Date();
-function getLocalDate (date, isSeconds = false, isISO = false) {
-  let re = new RegExp(':\\d{2}$', 'gui');
-  let res;
-
-  if (!isISO) res = isSeconds
-    ? date.toLocaleString()
-    : date.toLocaleString().replace(re, '');
-  else {
-    const year = date.getFullYear();
-    const month =
-      date.getMonth() + 1 < 9 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
-    const day = date.getDate() < 9 ? `0${date.getDate()}` : date.getDate();
-    const hour = date.getHours() < 9 ? `0${date.getHours()}` : date.getHours();
-    const minutes =
-      date.getMinutes() < 9 ? `0${date.getMinutes()}` : date.getMinutes();
-    const seconds =
-      date.getSeconds() < 9 ? `0${date.getSeconds()}` : date.getSeconds();
-
-    res = isSeconds
-      ? `${year}-${month}-${day}, ${hour}:${minutes}:${seconds}`
-      : `${year}-${month}-${day}, ${hour}:${minutes}`;
-  }
-
-  return res;
-};
-
-
-console.log(getLocalDate(myDate)); // 16.07.2019, 00:15
-console.log(getLocalDate(myDate, true)); // 16.07.2019, 00:15:32
-console.log(getLocalDate(myDate, false, true)); // 2019-06-02, 00:15
-console.log(getLocalDate(myDate, true, true)); // 2019-06-02, 00:15:32
-console.log(getLocalDate(new Date(123456))); // 01.01.1970, 03:02
-console.log(getLocalDate(new Date(123456), true)); // 1970-01-01, 03:02:03
-console.log(getLocalDate(new Date(123456), false, true)); // 1970-01-01, 03:02:03
-console.log(getLocalDate(new Date(123456), true, true)); // 1970-01-01, 03:02:03
-
-// тестирование
-console.log(getLocalDate(new Date(123456)) === '01.01.1970, 03:02');
-console.log(getLocalDate(new Date(123456), true) === '01.01.1970, 03:02:03');
-console.log(getLocalDate(new Date(123456), false, true) === '1970-01-01, 03:02');
-console.log(getLocalDate(new Date(123456), true, true) === '1970-01-01, 03:02:03');
-console.log(getLocalDate(new Date(1999999123456)) === '18.05.2033, 06:18');
-console.log(getLocalDate(new Date(1999999123456), true) === '18.05.2033, 06:18:43');
-console.log(getLocalDate(new Date(1999999123456), false, true) === '2033-05-18, 06:18');
-console.log(getLocalDate(new Date(1999999123456), true, true) === '2033-05-18, 06:18:43');
-
-
-/*
- * #3
- *
- * Создайте функцию getWeekDay(date), которая принимает дату в виде строки в формате 'yyyy-mm-dd'
- * и выводит текущий день недели: "понедельник", "вторник", … "воскресенье".
- */
-
-     function getWeekDay (date) {
-     let myDate = new Date (date);
-     let days = [
-       'воскресенье',
-         'понедельник',
-         'вторник',
-         'среда',
-         'четверг',
-         'пятница',
-         'суббота'
-            
-     ];
-     return days[myDate.getDay()];
-    };
-
-console.log(getWeekDay('2019-01-30'));
-console.log(getWeekDay('2019-07-16')); // вторник
-console.log(getWeekDay('2019-07-27')); // суббота
-
-/*
- * #4
- *
- * Напишите функцию, getLocalDay(date) которая возвращает день недели для даты date.
- * День нужно возвратить в европейской нумерации, т.е. понедельник имеет номер 1, вторник номер 2, …, воскресенье – номер 7.
- */
-
-function getLocalDay(date) {
-  let myDate = new Date (date);
-  let day = myDate.getDay();
-  if (day ===0) day = 7;
-  return day;
-};
-
-console.log(getLocalDay('2019-07-16')); // 2
-console.log(getLocalDay('2019-07-25')); // 4
-console.log(getLocalDay('2019-07-27')); // 6
-
-
-/*
- * #5
- *
- * Создайте функцию getDateAgo(date, days), которая возвращает дату,
- * которая была days дней назад от указанной даты date.
- * Дата принимается и возвращается в формате YYYY-MM-DD.
- */
-
-function getDateAgo(date, days) {
-  let myDate = new Date(date);
-
-  myDate.setDate(myDate.getDate() - days);
-  return myDate.toLocaleString().replace(/(\d.*),\s+(\d.*)/gui, '$1');
-}
-
-
-console.log(getDateAgo('2019-01-29', 1)); // 28.01.2019
-console.log(getDateAgo('2019-01-29', 2)); // 27.01.2019
-console.log(getDateAgo('2019-01-29', 365)); // 29.01.2018
-
-
-// // ##4 ##5 ##6
-
-let Car = function (engine, model, name, year) {
-        this.engine = engine;
-        this.model = model;
-        this.name = name;
-        this.year = year;
-    };
-
-// ************************************
-
-// CLASS
-// class Car {
-//     constructor (engine, model, name, year) {
-//     this.engine = engine;
-//     this.model = model;
-//     this.name = name;
-//     this.year = year;
-//     }
-// };
-
-Object.defineProperties(Car.prototype, {
-  used: {
-    get() {
-      const yearNow = new Date().getFullYear();
-
-      return yearNow - this.year > 1 ? 'used' : 'new';
-    },
-    set(value) {
-      const yearNow = new Date().getFullYear();
-
-      if (value === 'new' && this.year < yearNow) this.year = yearNow;
-    }
-  }
-});
-
- Car.prototype.info = function () {
-    return (this.name + ' ' + this.model + ', ' +  this.engine + 'cc' + ', ' + 'year ' + this.year + ', ' + this.used);
-};
-
-
-let car = new Car(1500, 'Rio', 'Kia', 2013);
-      
-console.log(car.info()); // chevrolet Lacetti, 2000cc, year 2010, used
-car.used = 'new';
-console.log(car.info()); // chevrolet Lacetti, 2000cc, year 2019, new -- год изменен
-car.used = 'used';
-console.log(car.info()); // chevrolet Lacetti, 2000cc, year 2019, new -- изменения не выполняются
-
-
-
-
-//  * #7
-//  * Напишите функцию testPerformance(iterations, func) для тестирования производительности любых, переданных ей в качестве параметра функций.
-//  * iterations – количество повторений для тестирования.
-//  * func – тестируемая функция.
+// /*
+//  * #1
 //  *
-//  * Если в качестве параметра передается что-либо кроме функции, тестирование не выполняется, возвращается 0.
+//  * replaceCSSComments() {...}
+//  * Найдите и удалите все комментарии CSS.
+//  * Функция получает строку, возвращает преобразованную строку, конечные пробелы должны быть удалены.
 //  */
-
-function testPerformance (iterations, func) {
-  let time = Date.now();
-
-  if (typeof func === 'function') for (let i = iterations; i--;) func();
-
-  return Date.now() - time;
+function replaceCSSComments(strCss) {
+return strCss.replace(/\/\*.*?\*\/\s?/g, '');
 };
 
-// данная функция необходима для корректного тестирования кода
-function test1() {
-  let str = myLongStr;
-  while (str.indexOf('o') !== -1) str = str.replace('o', '');
-  while (str.indexOf('a') !== -1) str = str.replace('a', '');
-  while (str.indexOf('e') !== -1) str = str.replace('e', '');
-  while (str.indexOf('u') !== -1) str = str.replace('u', '');
-  while (str.indexOf('i') !== -1) str = str.replace('i', '');
+console.log(replaceCSSComments('код без /*комментарий*/ комментов')); // код без комментов
+console.log(replaceCSSComments('код бе/*коммент1*/з ком/* коммент2 */ментов')); // код без комментов
+console.log(replaceCSSComments('код /*к1*/ без /* к2 */ коммент/*к3*/ов')); // код без комментов
+
+// /*
+//  * #2
+//  *
+//  * replaceHTMLComments() {...}
+//  * Найдите и удалите все комментарии HTML.
+//  * Функция получает строку, возвращает преобразованную строку.
+//  */
+function replaceHTMLComments(strHtml) {
+    return strHtml.replace(/\<\!\-\-.*?\-\-\>\s*/gi, '').trim();
+    };
+
+console.log(replaceHTMLComments('<!--коммент1--> код без комментов <!--коммент2-->')); // код без комментов
+console.log(replaceHTMLComments('<!--к1--> код <!-- к2 --><!-- к3 --> без <!-- к4 --> комментов')); // код без комментов
+console.log(replaceHTMLComments('код <!--к1--> без <!-- к2 --> комментов')); // код без комментов
+
+// /*
+//  * #3
+//  *
+//  * validateFileType() {...}
+//  * С помощью test определите, что переданная строка заканчивается расширениями: jpg, jpeg, png.
+//  * Функция получает строку – имя файла, возвращает true или false.
+//  */
+function validateFileType(strTest) {
+    return (/.+(\.jpg|\.jpeg|\.png)$/).test(strTest);
 }
 
-// данная функция необходима для корректного тестирования кода
-function test2() {
-  const reg = new RegExp('[oaeui]', 'gui');
+console.log(validateFileType('image.png')); // true
+console.log(validateFileType('image.html')); // false
+console.log(validateFileType('image.file.jpg')); // true
+console.log(validateFileType('image.png.file')); // false
+console.log(validateFileType('image.png.jpeg')); // true
+console.log(validateFileType('image.pngjpeg')); // false
 
-  myLongStr.replace(reg, '');
+// /*
+//  * #4
+//  *
+//  * checkYear() {...}
+//  * Определите, что год находится в интервале от 1900 до 2100 с помощью одного только (единственного) регулярного выражения.
+//  * Функция получает строку – год, возвращает true или false.
+//  */
+function checkYear(numYear) {
+return (/^(19\d\d|20\d\d|2100)$/).test(numYear);
+}
+console.log(checkYear(1900)); // true
+console.log(checkYear(2001)); // true
+console.log(checkYear(2100)); // true
+console.log(checkYear(1899)); // false
+console.log(checkYear(20)); // false
+console.log(checkYear(200)); // false
+console.log(checkYear(20000)); // false
+console.log(checkYear('20000')); // false
+console.log(checkYear(19)); // false
+console.log(checkYear('19')); // false
+console.log(checkYear(2101)); // false
+
+// /*
+//  * #5
+//  *
+//  * checkEmail() {...}
+//  * С помощью метода test определите, что переданная строка является имейлом. Примеры имейлов для тестирования: mymail@mail.ru, my.mail@mail.ua, my-mail@yahoo.com, mail@gmail.com
+//  * Функция получает строку – имейл, возвращает true или false.
+//  */
+function checkEmail(testMail) {
+   return (/^[a-zA-z]+\W?[a-zA-z]+?@[a-z\.]+?\.[a-z]{2,3}$/).test(testMail);
+}
+console.log(checkEmail('mail@gmail.com')); // true
+console.log(checkEmail('mail.name@mail.ua')); // true
+console.log(checkEmail('mail-name@mail.ua')); // true
+console.log(checkEmail('mail-name@mail.com.ua')); // true
+console.log(checkEmail('mail@gmail')); // false
+console.log(checkEmail('mail@gmail-com')); // false
+console.log(checkEmail(' mail-name@mail.com.ua')); // false
+console.log(checkEmail('mail-name@mail.com.ua ')); // false
+
+/*
+ * #6
+ *
+ * checkDomainUrl() {...}
+ * С помощью test определите, что переданная строка является доменом.
+ *     Протокол может быть как http, так и https.
+ *     Примеры доменов:
+ *     http://site.ua, https://my-site.com, https://site.com.ua, https://subdomain.site.com.ua
+ *         Функция получает строку – доменное имя, возвращает true или false.
+ */
+function checkDomainUrl(domainName) {
+return (/^(http|https):\/\/([a-zA-Z0-9-_]+\.)*[a-zA-Z0-9-_]+\.[a-z]{2,4}$/).test(domainName);
 }
 
-console.log(testPerformance(100, test1)); // time
-console.log(testPerformance(100, test2)); // time
-console.log(testPerformance(100, 12345)); // 0 
+console.log(checkDomainUrl('http://external.asd1230-123.asd_internal.asd.gm-_ail.com')); // true
+console.log(checkDomainUrl('http://domain.com')); // true
+console.log(checkDomainUrl('https://example.domain.com')); // true
+console.log(checkDomainUrl('https://example.domain-hyphen.com')); // true
+console.log(checkDomainUrl('http://example.domain-hyphen.com')); // true
+console.log(checkDomainUrl('http://www.domain.com')); // true
+console.log(checkDomainUrl('http://www.domain.info')); // true
+console.log(checkDomainUrl('http://www')); // false
+console.log(checkDomainUrl('https://domain')); // false
+console.log(checkDomainUrl(' https://domain')); // false
+console.log(checkDomainUrl('https://domain.com ')); // false
+console.log(checkDomainUrl('example.museum')); // false
+console.log(checkDomainUrl('example.domain-hyphen.com')); // false
+console.log(checkDomainUrl('www.domain.com')); // false
+console.log(checkDomainUrl('www.example.domain-hyphen.com')); // false
+
+/*
+ * #7
+ *
+ * createLinksFromDomains() {...}
+ * С помощью replace замените в строке домены вида http://site.ua, https://site.com на <a href="http://site.ua" target="_blank">site.ua</a>.
+ * Протокол может быть как http, так и https.
+ * Функция получает произвольную строку текста с доменами (один и более), возвращает результат преобразования.
+ */
+function createLinksFromDomains(strLong) {
+    let reg = new RegExp('(http:|https:)\\/\\/([a-zA-Z0-9-_]+\\.)*[a-zA-Z0-9][a-zA-Z0-9-_]+\\.[a-zA-Z]{2,3}', 'gi');
+    strLong.match(reg).forEach(function (item) {
+         strLong = strLong.replace(item, `<a href="${item}" target="_blank">${item.replace(/^(http:|https:)\/\//gi, '')}</a>`)});
+
+  return strLong;
+}
+/* <a href="http://site.ua">site.ua</a> text1 <a href="https://site.com">site.com</a> text2 <a href="https://site.com.ua">site.com.ua</a> text3 <a href="https://subdomain.my-site.com.ua">subdomain.my-site.com.ua</a> text4 */
+console.log(createLinksFromDomains('http://site.ua text1 https://site.com text2 https://site.com.ua text3 https://subdomain.my-site.com.ua text4'));
+// site.ua text1 <a href="https://site.com">site.com</a> text2 <a href="https://site.com.ua">site.com.ua</a> text3 subdomain.my-site.com.ua text4
+console.log(createLinksFromDomains('site.ua text1 https://site.com text2 https://site.com.ua text3 subdomain.my-site.com.ua text4'));
